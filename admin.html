@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="assets/js/app.js" defer></script>
+    <title>Admin panel</title>
+  </head>
+  <body>
+    <!-- шапка -->
+    <header>
+      <div class="container">
+        <div class="header">
+          <nav>
+            <a class="nav-btn" href="index.html">Главная</a>
+            <a class="nav-btn" href="index.html#catalog">Каталог</a>
+            <a class="nav-btn" href="admin.html">Админ панель</a>
+            <a class="nav-btn" href="add.html">Добавить товар +</a>
+          </nav>
+          <div class="logo">
+            <img src="assets/image/header/logo.png" alt="" />
+            <p>Spark</p>
+          </div>
+          <div class="signup">
+            <a class="nav-btn" href="profile.html">Профиль</a>
+            <a class="nav-btn" href="registration.html">Регистрация</a>
+            <a class="nav-btn" href="login.html">Вход</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- шапка -->
+    <!-- админ панель -->
+    <div class="admin">
+      <div class="container">
+        <h2>Админ панель</h2>
+        <div class="admin-hello">
+          <ul class="header-tabs">
+            <li class="list-item">
+              <p class="tab-btn">Категории</p>
+            </li>
+            <li class="list-item">
+              <p class="tab-btn">Товары</p>
+            </li>
+            <li class="list-item">
+              <p class="tab-btn">Заказы</p>
+            </li>
+          </ul>
+        </div>
+        <div class="tab">
+          <div class="categories">
+            <h3>Категории</h3>
+            <a href="" class="add-category">добавить категорию +</a>
+            <div class="categories-flex">
+              <div class="category-item">
+                <p>Подвесные</p>
+                <a href="" class="delete-admin">удалить</a>
+              </div>
+              <div class="category-item">
+                <p>Напольные</p>
+                <a href="" class="delete-admin">удалить</a>
+              </div>
+              <div class="category-item">
+                <p>Настенные</p>
+                <a href="" class="delete-admin">удалить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab">
+          <div class="users">
+            <form class="users-search">
+              <h3>Все товары</h3>
+              <div class="form-group">
+                <input type="text" placeholder="поиск по названию" />
+                <button class="btn">Найти</button>
+              </div>
+            </form>
+            <div class="user">
+              <img src="assets/image/items/item1.png" class="img" />
+              <p>id</p>
+              <p>Название</p>
+              <p>Цена</p>
+
+              <a href="" class="unban">Редактировать</a>
+              <a href="" class="delete-admin">Удалить</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab">
+          <div class="users">
+            <div class="users-search">
+              <h3>Все Заказы</h3>
+            </div>
+            <div class="user">
+              <img src="assets/image/items/item1.png" class="img" />
+              <p>Номер</p>
+              <p>Название</p>
+              <p>Цена</p>
+              <p>13.04.2023</p>
+              <form action="">
+                <select class="input">
+                  <option value="1">Отменен</option>
+                  <option value="2" selected>В доставке</option>
+                </select>
+                <button class="btn" type="submit">Изменить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- админ панель -->
+    <!-- подвал -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer-top">
+            <div class="footer-top-left">
+              <div class="logo">
+                <img src="assets/image/header/logo.png" alt="" />
+                <p>Spark</p>
+              </div>
+              <nav>
+                <a class="nav-btn" href="">Главная</a>
+                <a class="nav-btn" href="index.html#catalog">Каталог</a>
+                <a class="nav-btn" href="">Политика конфидинциальности</a>
+              </nav>
+              <div class="contacts">
+                <p>г. Казань</p>
+                <p>8(951)-064-97-70</p>
+                <p>spark@mail.ru</p>
+              </div>
+            </div>
+            <div class="footer-top-right">
+              <img src="assets/image/footer/instagram.png" alt="" />
+              <img src="assets/image/footer/vk.png" alt="" />
+              <img src="assets/image/footer/telegram.png" alt="" />
+            </div>
+          </div>
+          <p>©Валиуллин Рамиль 327 веб</p>
+        </div>
+      </div>
+    </footer>
+    <!-- подвал -->
+  </body>
+</html>

@@ -1,0 +1,535 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url(../assets/fonts/Lobster-Regular.ttf);
+}
+
+h2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster';
+    font-size: 48px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* шапка */
+header {
+    padding: 10px 0px;
+    background-color: #222324;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-family: 'Lobster';
+    font-size: 24px;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.logo img{
+    animation: rotate 5s infinite linear;
+}
+
+
+nav {
+    display: flex;
+    gap: 45px;
+}
+
+.signup {
+    display: flex;
+    gap: 45px;
+}
+
+.nav-btn {
+    color: white;
+    transition: .5s;
+    position: relative;
+}
+
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    background-color: #FFD845;
+    height: 2px;
+    transition: .5s;
+    
+}
+.nav-btn:hover::before{
+    width: 100%;
+    box-shadow: 0px 0px 20px 1px #FFD845;
+}
+
+.nav-btn:hover {
+    color: #FFD845;
+}
+/* шапка */
+
+/* банер */
+.baner {
+    background: url(../assets/image/baner/baner.png) no-repeat;
+    background-size: cover;
+    height: 945px;
+}
+
+.baner-content {
+    height: 945px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 100px;
+}
+
+.baner-content h1 {
+    color: white;
+    font-size: 64px;
+    font-family: 'Lobster';
+}
+
+.baner-content span {
+    color: #FFD845;
+}
+
+.btn {
+    color: white;
+    background-color: #222324;
+    border: 1px solid #222324;
+    padding: 14px 52px;
+    border-radius: 45px;
+    font-size: 24px;
+    transition: .5s;
+}
+
+/* банер */
+/* каталог */
+.catalog {
+    padding: 100px 0px;
+}
+
+.catalog-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.section-content{
+    padding: 110px 0;
+}
+
+.catalog-header h2{
+    margin: 0;
+}
+
+.item {
+    color: white;
+    background-color: #222324;
+    border-radius: 25px;
+}
+
+.item .btn {
+    border: white 1px solid;
+    padding: 10px 80px;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.btn:hover {
+    background-color: #FFD845;
+    border: #FFD845 1px solid;
+    color: black;
+    box-shadow: 0px 0px 30px 1px #FFD845;
+}
+
+.item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 30px;
+}
+
+.item-text p {
+    font-size: 18px;
+    margin-bottom: -20px;
+}
+
+.item-text span {
+    font-size: 14px;
+}
+
+.catalog-grid {
+    display: grid;
+    gap: 50px 0px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.catalog-grid img{
+    width: 305px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+    height: 400px;
+}
+.price {
+    color: #FFD845;
+    font-size: 16px;
+}
+
+.add {
+    display: flex;
+    justify-content: end;
+
+}
+
+/* каталог */
+/* скидки */
+.discount {
+    background-color: #FFD845;
+}
+
+.discount-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount-text .btn {
+    background-color: transparent;
+    color: #222324;
+}
+.discount-content .btn:hover{
+    background-color: white;
+    box-shadow: 0px 0px 30px 1px white;
+}
+
+.discount-content img {
+    width: 400px;
+}
+
+.discount-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* скидки */
+/* футер */
+footer {
+    background-color: #222324;
+    padding: 100px 0px;
+}
+
+.footer-top-left .logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 25px;
+}
+
+.footer-top-left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer a {
+    color: white;
+}
+.footer p{
+    color: white;
+}
+
+.footer-top-left nav,
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+.footer-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-top-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/* футер */
+/* товар */
+.one-item{
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    gap: 80px;
+}
+.one-item-text{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.one-item img{
+    object-fit: cover;
+    height: 92.1vh;
+}
+.one-item p{
+    color: #222324;
+    font-size: 24px;
+    width: 870px;
+}
+.one-item-name span{
+    color: #848483;
+}
+.one-item-name h3{
+    font-size: 36px;
+}
+.one-item-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+}
+.one-item .price{
+    font-size: 36px;
+    font-weight: 900;
+}
+.one-item-btns .btn{
+    font-size: 16px;
+    text-align: center;
+    padding: 6px 9px;
+}
+.delete{
+    background-color: #FF5353;
+    border: #FF5353 1px solid;
+}
+.delete:hover{
+    background-color: #FF5353;
+    border: #FF5353 1px solid;
+    box-shadow: 0px 0px 30px 1px #FF5353;
+}
+/* товар */
+
+/* форма */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+form input{
+    color: #222324;
+    border: 1px solid #222324;
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 45px;
+    font-size: 16px;
+    outline: none;
+}
+form select{
+    color: #222324;
+    border: 1px solid #222324;
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 45px;
+    font-size: 16px;
+    outline: none;
+}
+form .btn{
+    font-size: 16px;
+}
+form p{
+    color: #222324;
+}
+form a{
+    color: #FF5353;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+}
+.checkbox{
+    display: flex;
+    gap: 20px;
+    font-size: 10px;
+}
+.checkbox input{
+    width: 20px;
+}
+/* форма */
+/* Админ */
+.img{
+    width: 100px;
+    height: 100px;
+    background-color: #222324;
+    border-radius: 50%;
+}
+.admin{
+    margin: 100px 0px;
+}
+.admin-hello{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 32px;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+}
+.categories-flex{
+    display: flex;
+    gap: 30px;
+}
+.category-item{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #222324;
+}
+.categories h3{
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-size: 32px;
+}
+
+.header-tabs{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab.hide{
+    display: none;
+}
+
+.tab.show{
+    display: block;
+}
+.all-users{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #222324;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: #222324 1px solid;
+    margin-top: 25px;
+    font-size: 20px;
+}
+.delete-admin, .ban{
+    color: #FF5353;
+}
+.users-search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+    font-size: 32px;
+    align-items: center;
+    margin-top: 50px;
+}
+.users-search input{
+    border-radius: 10px;
+    padding: 8px 20px;
+    outline: none;
+}
+
+.users-search h2{
+    margin: 0;
+}
+.add-category{
+    color: #66CE41;
+    margin-bottom: 10px;
+}
+.users-search select{
+    border-radius: 10px;
+    padding: 8px 20px;
+    outline: none;
+}
+.unban{
+    color: #66CE41;
+}
+/* Админ */
+/* Профиль */
+.profile-flex{
+    display: flex;
+    gap: 73px;
+    height: 40vh;
+}
+.profile-flex .img{
+    width: 300px;
+    height: 300px;
+}
+.profile-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile-text h3{
+    font-size: 32px;
+}
+.profile-text .btn{
+    font-size: 16px;
+    text-align: center;
+}
+.profile-text p{
+    font-size: 20px;
+}
+/* Профиль */

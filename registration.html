@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="assets/js/app.js" defer></script>
+
+    <title>Registration</title>
+</head>
+
+<body>
+    <!-- шапка -->
+    <header>
+        <div class="container">
+            <div class="header">
+                <nav>
+                    <a class="nav-btn" href="index.html">Главная</a>
+                    <a class="nav-btn" href="index.html#catalog">Каталог</a>
+                    <a class="nav-btn" href="admin.html">Админ панель</a>
+                </nav>
+                <div class="logo">
+                    <img src="assets/image/header/logo.png" alt="">
+                    <p>Spark</p>
+                </div>
+                <div class="signup">
+                    <a class="nav-btn" href="profile.html">Профиль</a>
+                    <a class="nav-btn" href="registration.html">Регистрация</a>
+                    <a class="nav-btn" href="login.html">Вход</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- шапка -->
+    <!-- форма -->
+    <div class="container">
+        <div class="form">
+            <h2>Регистрация</h2>
+            <form action="">
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Почта" required>
+                <input type="password" placeholder="Пароль" required>
+                <input type="password" placeholder="Повторить пароль" required>
+                <input type="submit" class="btn" value="зарегистрироваться">
+                <div class="checkbox">
+                <input type="checkbox" required>
+                <label for="checkbox">Согласен на обработку персональных данных</label>
+            </div>
+                <p>Уже есть аккаунт? <br> <a href="login.html">Войти</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- форма -->
+</body>
+
+</html>
